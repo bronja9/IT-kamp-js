@@ -564,3 +564,240 @@ class Phone {
 
 // const myPhone = new Phone("iphone", "jesam", "128");
 // console.log(myPhone);
+
+// const mojeImeObjekat = {
+//   ime: "Aldin",
+//   prezime: "blabas;ldkasl;djsalk",
+// };
+
+// class NewClass {
+//   ime = "ALdin";
+//   prezime = "Halilovic;";
+// }
+
+// const mojeIme = new NewClass();
+
+// console.log(mojeIme);
+
+// class Bus {
+//   seats;
+//   color;
+
+//   constructor(sedista, boja) {
+//     this.color = boja;
+//     this.seats = sedista;
+//   }
+
+//   helloBus() {
+//     console.log("caoooooooo");
+//   }
+
+//   changeColor(newColor) {
+//     this.color = newColor;
+//   }
+
+//   getColor() {
+//     return this.color;
+//   }
+// }
+
+// const lasta = new Bus(55, "zelena");
+
+// console.log(lasta);
+
+// lasta.helloBus();
+
+// lasta.changeColor("zuta");
+// console.log(lasta);
+
+// const bojaAutaobusa = lasta.getColor();
+// console.log(bojaAutaobusa);
+
+class Pet {
+  legNum;
+  tail;
+
+  constructor(noge, rep) {
+    this.legNum = noge;
+    this.tail = rep;
+  }
+}
+
+class Cat extends Pet {
+  name;
+  color;
+
+  constructor(noge, rep, ime, boja) {
+    super(noge, rep);
+    this.name = ime;
+    this.color = boja;
+  }
+}
+
+class Dog extends Cat {
+  constructor(noge, rep, ime, boja) {
+    super(noge, rep, ime, boja);
+  }
+
+  bark() {
+    console.log("arrrr!!!");
+  }
+
+  getTail() {
+    return this.tail;
+  }
+}
+
+const ourCat = new Cat(4, "yes", "Sladjan", "Bela");
+
+const ourDog = new Dog(4, "yes", "Sladjana", "grey");
+
+// console.log(ourCat);
+
+// console.log(ourDog);
+
+// ourDog.bark();
+
+////////////////////////////////////////ENKAPSULACIJA////////////////////////////////////////////////////
+
+// class Shop {
+//   #ime;
+//   lokacija;
+//   logo;
+
+//   static brojKasa = 10;
+
+//   constructor(name, location, logo) {
+//     this.#ime = name;
+//     this.lokacija = location;
+//     this.logo = logo;
+//   }
+
+//   get ourName() {
+//     return this.#ime;
+//   }
+
+//   setOurName(nekoIme) {
+//     this.#ime = nekoIme;
+//   }
+// }
+
+// const brojKasaUMaxiju = Shop.brojKasa;
+
+// const maxi = new Shop("maxi", "1. maj", "MaXi");
+
+// class Cat extends Pet {
+// console.log(maxi);
+// // console.log(maxi.ime);
+
+// const imeProdavnice = maxi.ourName;
+// console.log(imeProdavnice);
+
+// maxi.setOurName("idea");
+
+// console.log(maxi);
+
+// class Shop {
+//   #ime;
+//   lokacija;
+//   logo;
+
+//   static brojKasa = 10;
+
+//   constructor(name, location, logo) {
+//     this.#ime = name;
+//     this.lokacija = location;
+//     this.logo = logo;
+//   }
+
+//   ourName() {
+//     return this.#ime;
+//   }
+
+//   setOurName(nekoIme) {
+//     this.#ime = nekoIme;
+//   }
+// }
+
+// const nekaProdavnica = new Shop("IDEA", "jedinstvo", "iDEA");
+
+// console.log(nekaProdavnica);
+// // console.log(nekaProdavnica.#ime);
+
+// const imeProdavnice = nekaProdavnica.ourName();
+
+// console.log(imeProdavnice);
+
+// nekaProdavnica.setOurName("RODA");
+
+// console.log(nekaProdavnica);
+
+//////////////////////////////////////////////////////////////////
+
+// abstrakcija
+
+// class User {
+//   name;
+//   color;
+//   height;
+//   width;
+//   age;
+
+//   constructor(noge, rep, ime, boja) {
+//     super(noge, rep);
+//   constructor(ime, visina, sirina, godine) {
+//     this.name = ime;
+//     this.color = boja;
+//   }
+// }
+
+// class Dog extends Cat {
+//   constructor(noge, rep, ime, boja) {
+//     super(noge, rep, ime, boja);
+//     this.height = visina;
+//     this.width = sirina;
+//     this.age = godine;
+//   }
+
+//   bark() {
+//     console.log("arrrr!!!");
+//   checkUserAge() {
+//     if (this.age < 16) {
+//       console.log("You can pass!");
+//     } else {
+//       console.log("Sorry, you are too old!");
+//     }
+//   }
+
+//   getTail() {
+//     return this.tail;
+//   checkUserHeight() {
+//     if (this.height < 160) {
+//       console.log("You can pass!");
+//     } else {
+//       console.log("Sorry, you can not pass!");
+//     }
+//   }
+// }
+
+// const ourCat = new Cat(4, "yes", "Sladjan", "Bela");
+// const aldin = new User("Aldin", 170, 100, 20);
+
+// const redzi = new User("Redzi", 182, 3, 18);
+
+// const ourDog = new Dog(4, "yes", "Sladjana", "grey");
+// aldin.checkUserAge();
+// aldin.checkUserHeight();
+
+// console.log(ourCat);
+// const ucenik1 = "Redzi";
+// const ucenik2 = "Haris";
+// const ucenik3 = "Tarik";
+
+// console.log(ourDog);
+// const ucenik1godine = 33;
+// const ucenik2godine = 18;
+// const ucenik3godine = 25;
+
+// ourDog.bark();
+// poredjati ucenike po starosti
