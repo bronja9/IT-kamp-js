@@ -814,19 +814,43 @@ const ourDog = new Dog(4, "yes", "Sladjana", "grey");
 // console.log(nums);
 // console.log(reversed);
 
-const random = [528, 23, 339, 99, 33, 200];
-// let maxNum = 0;
+const arr = [528, 23, 339, 99, 33, 200];
 
-// for (let i = 0; i < random.length; i++) {
-//   if (random[i] > maxNum) {
-//     maxNum = random[i];
-//   }
-// }
+// arr.reverse();
+// console.log(arr);
 
-// console.log(maxNum);
+// arr.sort((a, b) => a - b);
+// console.log(arr);
 
-random.reverse();
-console.log(random);
+// arr.sort((a, b) => b - a);
+// console.log(arr);
 
-random.sort((a, b) => b - a);
-console.log(random);
+// console.log(Math.max(...arr));
+// console.log(Math.min(...arr));
+
+const reversed = [];
+for (let i = arr.length - 1; i >= 0; i--) {
+  reversed.push(arr[i]);
+}
+
+console.log(reversed);
+
+maxNum = arr[0];
+
+for (let i = arr.length - 1; i >= 0; i--) {
+  if (arr[i] > maxNum) {
+    maxNum = arr[i];
+  }
+}
+
+console.log(maxNum);
+
+minNum = arr[0];
+
+for (let i = arr.length - 1; i >= 0; i--) {
+  if (minNum > arr[i]) {
+    minNum = arr[i];
+  }
+}
+
+console.log(minNum);
