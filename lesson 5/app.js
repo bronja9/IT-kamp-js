@@ -801,3 +801,32 @@ const ourDog = new Dog(4, "yes", "Sladjana", "grey");
 
 // ourDog.bark();
 // poredjati ucenike po starosti
+
+/////////////////////////////////////////////////////////
+
+// const nums = [2, 3, 45, 7654, 645];
+// const reversed = [];
+
+// for (let i = nums.length - 1; i >= 0; i--) {
+//   reversed.push(nums[i]);
+// }
+
+// console.log(nums);
+// console.log(reversed);
+
+const random = [528, 23, 339, 99, 33, 200];
+// let maxNum = 0;
+
+// for (let i = 0; i < random.length; i++) {
+//   if (random[i] > maxNum) {
+//     maxNum = random[i];
+//   }
+// }
+
+// console.log(maxNum);
+
+random.reverse();
+console.log(random);
+
+random.sort((a, b) => b - a);
+console.log(random);
