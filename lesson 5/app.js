@@ -790,67 +790,65 @@ const ourDog = new Dog(4, "yes", "Sladjana", "grey");
 // aldin.checkUserHeight();
 
 // console.log(ourCat);
-// const ucenik1 = "Redzi";
-// const ucenik2 = "Haris";
-// const ucenik3 = "Tarik";
 
 // console.log(ourDog);
-// const ucenik1godine = 33;
-// const ucenik2godine = 18;
-// const ucenik3godine = 25;
 
 // ourDog.bark();
-// poredjati ucenike po starosti
 
 /////////////////////////////////////////////////////////
 
-// const nums = [2, 3, 45, 7654, 645];
-// const reversed = [];
+const products = [
+  {
+    id: 1,
+    name: "T-shirt",
+    qty: 1,
+    price_per_unit: 100,
+  },
+  {
+    id: 2,
+    name: "Sneakers",
+    qty: 1,
+    price_per_unit: 300,
+  },
+  {
+    id: 3,
+    name: "Necklace",
+    qty: 5,
+    price_per_unit: 125,
+  },
+];
 
-// for (let i = nums.length - 1; i >= 0; i--) {
-//   reversed.push(nums[i]);
-// }
+// const calTotal = (arr) => {
+//   const productsWithTotal = arr.map((el) => {
+//     return {
+//       ...el,
+//       total: el.qty * el.price_per_unit,
+//     };
+//   });
 
-// console.log(nums);
-// console.log(reversed);
+//   const total = productsWithTotal.reduce((a, b) => {
+//     return a + b.total;
+//   }, 0);
 
-const arr = [528, 23, 339, 99, 33, 200];
+//   console.log(productsWithTotal);
 
-// arr.reverse();
-// console.log(arr);
+//   return total;
+// };
 
-// arr.sort((a, b) => a - b);
-// console.log(arr);
+// console.log(calTotal(products));
 
-// arr.sort((a, b) => b - a);
-// console.log(arr);
+const calTotal = (arr) => {
+  const productsWithTotal = arr.map((el) => el.qty * el.price_per_unit);
 
-// console.log(Math.max(...arr));
-// console.log(Math.min(...arr));
+  const total = productsWithTotal.reduce((a, b) => {
+    return a + b;
+  }, 0);
 
-const reversed = [];
-for (let i = arr.length - 1; i >= 0; i--) {
-  reversed.push(arr[i]);
-}
+  console.log(productsWithTotal);
 
-console.log(reversed);
+  return total;
+};
 
-maxNum = arr[0];
+calTotal(products);
 
-for (let i = arr.length - 1; i >= 0; i--) {
-  if (arr[i] > maxNum) {
-    maxNum = arr[i];
-  }
-}
-
-console.log(maxNum);
-
-minNum = arr[0];
-
-for (let i = arr.length - 1; i >= 0; i--) {
-  if (minNum > arr[i]) {
-    minNum = arr[i];
-  }
-}
-
-console.log(minNum);
+console.log(typeof typeof 2);
