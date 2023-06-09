@@ -797,26 +797,26 @@ const ourDog = new Dog(4, "yes", "Sladjana", "grey");
 
 /////////////////////////////////////////////////////////
 
-const products = [
-  {
-    id: 1,
-    name: "T-shirt",
-    qty: 1,
-    price_per_unit: 100,
-  },
-  {
-    id: 2,
-    name: "Sneakers",
-    qty: 1,
-    price_per_unit: 300,
-  },
-  {
-    id: 3,
-    name: "Necklace",
-    qty: 5,
-    price_per_unit: 125,
-  },
-];
+// const products = [
+//   {
+//     id: 1,
+//     name: "T-shirt",
+//     qty: 1,
+//     price_per_unit: 100,
+//   },
+//   {
+//     id: 2,
+//     name: "Sneakers",
+//     qty: 1,
+//     price_per_unit: 300,
+//   },
+//   {
+//     id: 3,
+//     name: "Necklace",
+//     qty: 5,
+//     price_per_unit: 125,
+//   },
+// ];
 
 // const calTotal = (arr) => {
 //   const productsWithTotal = arr.map((el) => {
@@ -837,18 +837,78 @@ const products = [
 
 // console.log(calTotal(products));
 
-const calTotal = (arr) => {
-  const productsWithTotal = arr.map((el) => el.qty * el.price_per_unit);
+// const calTotal = (arr) => {
+//   const productsWithTotal = arr.map((el) => el.qty * el.price_per_unit);
 
-  const total = productsWithTotal.reduce((a, b) => {
-    return a + b;
-  }, 0);
+//   const total = productsWithTotal.reduce((a, b) => {
+//     return a + b;
+//   }, 0);
 
-  console.log(productsWithTotal);
+//   console.log(productsWithTotal);
 
-  return total;
-};
+//   return total;
+// };
 
-calTotal(products);
+// calTotal(products);
 
-console.log(typeof typeof 2);
+// console.log(typeof typeof typeof typeof 2);
+
+/////////////////////////////////////
+
+// const squarNumber = [3, 44, 523, 532];
+// const kvadrat = squarNumber.map((el) => el * el);
+// console.log(squarNumber);
+// console.log(kvadrat);
+
+// const parni = kvadrat.filter((el) => el % 2 === 0);
+// console.log(parni);
+
+// const zbir = parni.reduce((a, b) => a + b, 0);
+// console.log(zbir);
+
+// const kvadratNepar = squarNumber.filter((i) => i % 2 === 0);
+// console.log(kvadratNepar);
+
+// const randomWords = [
+//   "macka",
+//   "imam",
+//   "hodza",
+//   "nemam",
+//   "pecat",
+//   "efendija",
+//   "televizor",
+// ];
+
+// const niz = randomWords.filter((el) => el[1] === "e");
+// console.log(niz);
+
+const nekiRandomBrojevi = [43, 234, 15, 87, 19, 934, 54, 2, 3, 544, 9];
+
+// const noviNiz = [];
+
+// nekiRandomBrojevi.forEach((el) => {
+//   if (el > 18 && el < 30) {
+//     noviNiz.push((el * 8) / 4);
+//   } else if (el > 18) {
+//     noviNiz.push(el * 4);
+//   } else {
+//     noviNiz.push(el);
+//   }
+// });
+
+// console.log(noviNiz);
+
+// const noviNiz = nekiRandomBrojevi.map((el) => {
+//   if (el > 18 && el < 30) {
+//     return (el * 8) / 4;
+//   } else if (el > 18) {
+//     return el * 4;
+//   } else {
+//     return el;
+//   }
+// });
+
+// console.log(noviNiz);
+
+const imenjak = "aldin";
+console.log(imenjak);
