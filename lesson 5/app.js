@@ -909,6 +909,3 @@ const nekiRandomBrojevi = [43, 234, 15, 87, 19, 934, 54, 2, 3, 544, 9];
 // });
 
 // console.log(noviNiz);
-
-const imenjak = "aldin";
-console.log(imenjak);
