@@ -13,34 +13,49 @@ let stocks = {
 
 let is_shop_open = true;
 
-// let order = () => {
+/////////////////////////////
+
+// let toppings_choise = () => {
 //   return new Promise((resolve, reject) => {
-//     if(){
-//       resolve()
-//     }else{
-//       reject()
-//     }
+//     setTimeout(() => {
+//       console.log("which topping would you love?");
+//       resolve();
+//     }, 3000);
 //   });
 // };
 
-// order()
-// .then()
-// .then()
-// .then()
-// .then()
-// .catch()
-// .finally()
+// async function kitchen() {
+//   console.log("A");
+//   console.log("B");
+//   console.log("C");
 
-async function order() {
-  try {
-    await abc;
-  } catch (error) {
-    console.log("abc does not exits", error);
-  } finally {
-    console.log("runs code anyways");
-  }
-}
+//   await toppings_choise();
 
+//   console.log("D");
+//   console.log("E");
+// }
+
+// kitchen();
+
+// console.log("doing dishes");
+// console.log("cleaning the tables");
+// console.log("taking others orders");
+
+////////////////////////////////////////
+
+// async function order() {
+//   try {
+//     await abc;
+//   } catch (error) {
+//     console.log("abc does not exits", error);
+//   } finally {
+//     console.log("runs code anyways");
+//   }
+// }
+
+// order().then(() => {
+//   console.log("sadoisaio");
+// });
 ///////////////////////////////////// PROMISES ///////////////////////////////////////////
 
 // let is_shop_open = true;
