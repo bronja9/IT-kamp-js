@@ -14,4 +14,95 @@ let stocks = {
   toppings: ["chocolate", "penauts"],
 };
 
-isShopOpen = true;
+let isShopOpen = false;
+
+let order = (work, time) => {
+  return new Promise((resolve, reject) => {
+    if (isShopOpen) {
+      setTimeout(() => {
+        resolve(work());
+      }, time);
+    } else {
+      reject(console.log("shop is closed"));
+    }
+  });
+};
+
+order();
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// let production = () => {
+//   setTimeout(() => {
+//     console.log(`${stocks.Fruits[0]} was selected`);
+
+//     setTimeout(() => {
+//       console.log("start the production");
+
+//       setTimeout(() => {
+//         console.log("cut the fruits");
+
+//         setTimeout(() => {
+//           console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`);
+
+//           setTimeout(() => {
+//             console.log("start the machine");
+
+//             setTimeout(() => {
+//               console.log(`ice cream placed on ${stocks.holder[0]}`);
+
+//               setTimeout(() => {
+//                 console.log(`${stocks.toppings[0]} was selected`);
+
+//                 setTimeout(() => {
+//                   console.log("serve ice cream");
+//                 }, 2000);
+//               }, 3000);
+//             }, 2000);
+//           }, 1000);
+//         }, 1000);
+//       }, 2000);
+//     }, 0);
+//   }, 2000);
+// };
+
+// production();
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// let order = (fruitName, callProduction) => {
+//   setTimeout(() => {
+//     console.log(`${stocks.Fruits[fruitName]} was selected`);
+//     callProduction();
+//   }, 2000);
+// };
+
+// let production = () => {
+//   setTimeout(() => {
+//     console.log("production has been started ");
+
+//     setTimeout(() => {
+//       console.log("fruit has been chopped");
+
+//       setTimeout(() => {
+//         console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`);
+
+//         setTimeout(() => {
+//           console.log("start the machine");
+
+//           setTimeout(() => {
+//             console.log(`ice cream placed on ${stocks.holder[0]}`);
+
+//             setTimeout(() => {
+//               console.log(`${stocks.toppings[0]} has been selected`);
+
+//               setTimeout(() => {
+//                 console.log("serve ice cream");
+//               }, 2000);
+//             }, 3000);
+//           }, 2000);
+//         }, 1000);
+//       }, 1000);
+//     }, 2000);
+//   }, 0);
+// };
+
+// order(0, production);
