@@ -14,21 +14,65 @@ let stocks = {
   toppings: ["chocolate", "penauts"],
 };
 
-let isShopOpen = false;
+let isShopOpen = true;
 
-let order = (work, time) => {
-  return new Promise((resolve, reject) => {
-    if (isShopOpen) {
-      setTimeout(() => {
-        resolve(work());
-      }, time);
-    } else {
-      reject(console.log("shop is closed"));
-    }
-  });
-};
+/////////////////////////////////////////////////////////////////////////////////////////
+// let order = (work, time) => {
+//   return new Promise((resolve, reject) => {
+//     if (isShopOpen) {
+//       setTimeout(() => {
+//         resolve(work());
+//       }, time);
+//     } else {
+//       reject(console.log("shop is closed"));
+//     }
+//   });
+// };
 
-order();
+// order(() => {
+//   console.log(`${stocks.Fruits[0]} was selected`);
+// }, 2000)
+//   .then(() => {
+//     return order(() => {
+//       console.log("start the production");
+//     }, 0);
+//   })
+//   .then(() => {
+//     return order(() => {
+//       console.log("cut the fruits");
+//     }, 2000);
+//   })
+//   .then(() => {
+//     return order(() => {
+//       console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`);
+//     }, 1000);
+//   })
+//   .then(() => {
+//     return order(() => {
+//       console.log("start the machine");
+//     }, 1000);
+//   })
+//   .then(() => {
+//     return order(() => {
+//       console.log(`ice cream has been placed on ${stocks.holder[0]}`);
+//     }, 2000);
+//   })
+//   .then(() => {
+//     return order(() => {
+//       console.log(`${stocks.toppings[0]} has been selected`);
+//     }, 3000);
+//   })
+//   .then(() => {
+//     return order(() => {
+//       console.log("serve the ice cream");
+//     }, 2000);
+//   })
+//   .catch(() => {
+//     console.log("customer left");
+//   })
+//   .finally(() => {
+//     console.log("day ended, shop is closed");
+//   });
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 // let production = () => {
