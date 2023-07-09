@@ -236,8 +236,8 @@
 const fetchData3 = () => {
   fetch("https://dummyjson.com/carts")
     .then((response) => response.json())
-    .then((newest) => newest.carts.map((el) => el.products))
-    .then((some) => some.map((el) => el.filter((el) => el.total > 62)))
+    .then((newOne) => newOne.carts.map((el) => el.products))
+    .then((newest) => newest.map((el) => el.filter((el) => el.quantity > 2)))
     .then(console.log);
 };
 
