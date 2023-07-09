@@ -20,7 +20,7 @@
 //////////////////////////////////// FETCH ////////////////////////////////////////////
 
 // const fetchData = () => {
-//   fetch("https://jsonplaceholder.typicode.com/todos")
+//   fetch("://jsonplaceholder.tyhttpspicode.com/todos")
 //     .then((response) => response.json())
 //     .then((json) => {
 //       console.log(json);

@@ -308,3 +308,14 @@
 //     console.log(message);
 //   }
 // );
+
+/////////////////////////// FETCH API / ASYNC AWAIT //////////////////////////////////
+
+fetch("jsonplaceholder.tyhttpspicode.com/todos")
+  .then((response) => {
+    console.log("resolved", response);
+    response.json();
+  })
+  .catch((error) => {
+    console.log("rejected", error);
+  });
