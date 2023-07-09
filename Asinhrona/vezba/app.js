@@ -233,12 +233,12 @@
 
 // fetchData2();
 
-const fetchData3 = () => {
-  fetch("https://dummyjson.com/carts")
-    .then((response) => response.json())
-    .then((newOne) => newOne.carts.map((el) => el.products))
-    .then((newest) => newest.map((el) => el.filter((el) => el.quantity > 2)))
-    .then(console.log);
-};
+// const fetchData3 = () => {
+//   fetch("https://dummyjson.com/carts")
+//     .then((response) => response.json())
+//     .then((newOne) => newOne.carts.map((el) => el.products))
+//     .then((newest) => newest.map((el) => el.filter((el) => el.quantity > 2)))
+//     .then(console.log);
+// };
 
-fetchData3();
+// fetchData3();

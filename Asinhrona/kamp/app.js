@@ -45,14 +45,14 @@
 
 // fetchData2();
 
-const fetchData3 = () => {
-  fetch("https://dummyjson.com/carts")
-    .then((res) => res.json())
-    .then((novi) =>
-      novi.carts.map((el) => el.products.filter((el) => el.total > 646))
-    )
-    // .then((noviji) => noviji.filter((el) => el.length))
-    .then(console.log);
-};
+// const fetchData3 = () => {
+//   fetch("https://dummyjson.com/carts")
+//     .then((res) => res.json())
+//     .then((novi) =>
+//       novi.carts.map((el) => el.products.filter((el) => el.total > 646))
+//     )
+//     .then((noviji) => noviji.filter((el) => el.length))
+//     .then(console.log);
+// };
 
-fetchData3();
+// fetchData3();

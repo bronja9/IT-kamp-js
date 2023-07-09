@@ -200,12 +200,83 @@
 
 //////////////////////////////// FETCH /////////////////////////////////////////////////
 
-const url = "http://worldtimeapi.org/api/timezone/America/New_York";
+// const url = "http://worldtimeapi.org/api/timezone/America/New_York";
 
-async function getData() {
-  const response = await fetch(url);
-  const data = await response.json();
-  console.log(data);
+// async function getData() {
+//   const response = await fetch(url);
+//   const data = await response.json();
+//   console.log(data);
+// }
+
+// getData();
+
+///////////////////////////// PROMISES ////////////////////////////////////////////////
+
+// let p = new Promise((resolve, reject) => {
+//   let a = 1 + 1;
+//   if (a == 2) {
+//     resolve("success");
+//   } else {
+//     reject("failed");
+//   }
+// });
+
+// p.then((message) => {
+//   console.log("this is in the then " + message);
+// }).catch((message) => {
+//   console.log("this is in the catch " + message);
+// });
+
+const userLeft = false;
+const userWatchingCatMeme = false;
+
+// function watchTutorialCallback(callback, errorCallback) {
+//   if (userLeft) {
+//     errorCallback({
+//       name: "user left",
+//       message: ":(",
+//     });
+//   } else if (userWatchingCatMeme) {
+//     errorCallback({
+//       name: "user watching cat meme",
+//       message: "webDevSimplified < cat",
+//     });
+//   } else {
+//     callback("thums up and subscribe");
+//   }
+// }
+
+// watchTutorialCallback(
+//   (message) => {
+//     console.log("success " + message);
+//   },
+//   (error) => {
+//     console.log(error.name + " " + error.message);
+//   }
+// );
+
+function watchTutorialPromise() {
+  return new Promise((resolve, reject) => {
+    if (userLeft) {
+      reject({
+        name: "user left",
+        message: ":(",
+      });
+    } else if (userWatchingCatMeme) {
+      reject({
+        name: "user watching cat meme",
+        message: "webDevSimplified < cat",
+      });
+    } else {
+      resolve("thums up and subscribe");
+    }
+  });
 }
 
-getData();
+watchTutorialPromise()
+  .then((message) => {
+    console.log("success " + message);
+  })
+  .catch((error) => {
+    console.log(error.name + " " + error.message);
+  });
