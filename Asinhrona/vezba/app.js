@@ -219,10 +219,22 @@
 
 // fetchData();
 
-const fetchData2 = () => {
-  fetch("https://dummyjson.com/products")
+// const fetchData2 = () => {
+//   fetch("https://dummyjson.com/products")
+//     .then((response) => response.json())
+//     .then((newOne) => newOne.products.filter((el) => el.stock > 93))
+//     .then((ids) => ids.filter((el) => el.id % 2 === 0))
+//     .then((ratings) => ratings.filter((el) => el.rating > 4.3))
+//     .then((prices) => prices.filter((el) => el.price > 14))
+//     .then((discounts) => discounts.filter((el) => el.discountPercentage > 14))
+//     .then(console.log)
+//     .catch((error) => console.log(error));
+// };
+
+// fetchData2();
+
+const fetchData3 = () => {
+  fetch("https://dummyjson.com/carts")
     .then((response) => response.json())
     .then(console.log);
 };
-
-fetchData2();
