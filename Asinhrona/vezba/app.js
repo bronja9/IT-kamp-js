@@ -197,22 +197,32 @@
 
 /////////////////////////////////// FETCH API //////////////////////////////////////////
 
-const fetchData = () => {
-  fetch("https://jsonplaceholder.typicode.com/todos")
+// const fetchData = () => {
+//   fetch("https://jsonplaceholder.typicode.com/todos")
+//     .then((response) => response.json())
+//     .then((json) => json.filter((el) => el.userId != 10))
+//     .then((evenIds) => evenIds.filter((el) => el.id % 2 === 0))
+//     .then((titleLength) => titleLength.filter((el) => el.title.length < 46))
+//     .then((complete) => complete.filter((el) => el.completed === true))
+//     .then((newResult) =>
+//       newResult.map((el) => {
+//         return {
+//           ...el,
+//           sumOfAllIds: newResult.reduce((a, c) => a + c.id, 0),
+//         };
+//       })
+//     )
+
+//     .then(console.log)
+//     .catch((error) => console.log(error));
+// };
+
+// fetchData();
+
+const fetchData2 = () => {
+  fetch("https://dummyjson.com/products")
     .then((response) => response.json())
-    .then((json) => json.filter((el) => el.userId != 10))
-    .then((evenIds) => evenIds.filter((el) => el.id % 2 === 0))
-    .then((titleLength) => titleLength.filter((el) => el.title.length < 46))
-    .then((complete) => complete.filter((el) => el.completed === true))
-    .then((newOne) =>
-      newOne.map((el) => {
-        return {
-          ...el,
-          suma: 0,
-        };
-      })
-    )
     .then(console.log);
 };
 
-fetchData();
+fetchData2();
