@@ -51,7 +51,7 @@ const fetchData3 = () => {
     .then((novi) =>
       novi.carts.map((el) => el.products.filter((el) => el.total > 646))
     )
-    .then((noviji) => noviji.filter((el) => el.length))
+    // .then((noviji) => noviji.filter((el) => el.length))
     .then(console.log);
 };
 
