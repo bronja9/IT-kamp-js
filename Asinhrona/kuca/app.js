@@ -227,8 +227,10 @@
 //   console.log("this is in the catch " + message);
 // });
 
-const userLeft = false;
-const userWatchingCatMeme = false;
+/////////////////
+
+// const userLeft = false;
+// const userWatchingCatMeme = false;
 
 // function watchTutorialCallback(callback, errorCallback) {
 //   if (userLeft) {
@@ -255,28 +257,54 @@ const userWatchingCatMeme = false;
 //   }
 // );
 
-function watchTutorialPromise() {
-  return new Promise((resolve, reject) => {
-    if (userLeft) {
-      reject({
-        name: "user left",
-        message: ":(",
-      });
-    } else if (userWatchingCatMeme) {
-      reject({
-        name: "user watching cat meme",
-        message: "webDevSimplified < cat",
-      });
-    } else {
-      resolve("thums up and subscribe");
-    }
-  });
-}
+// function watchTutorialPromise() {
+//   return new Promise((resolve, reject) => {
+//     if (userLeft) {
+//       reject({
+//         name: "user left",
+//         message: ":(",
+//       });
+//     } else if (userWatchingCatMeme) {
+//       reject({
+//         name: "user watching cat meme",
+//         message: "webDevSimplified < cat",
+//       });
+//     } else {
+//       resolve("thums up and subscribe");
+//     }
+//   });
+// }
 
-watchTutorialPromise()
-  .then((message) => {
-    console.log("success " + message);
-  })
-  .catch((error) => {
-    console.log(error.name + " " + error.message);
-  });
+// watchTutorialPromise()
+//   .then((message) => {
+//     console.log("success " + message);
+//   })
+//   .catch((error) => {
+//     console.log(error.name + " " + error.message);
+//   });
+
+///////////////////
+
+// const recordVideoOne = new Promise((resolve, reject) => {
+//   resolve("video 1 recorded");
+// });
+
+// const recordVideoTwo = new Promise((resolve, reject) => {
+//   resolve("video 2 recorded");
+// });
+
+// const recordVideoThree = new Promise((resolve, reject) => {
+//   resolve("video 3 recorded");
+// });
+
+// Promise.all([recordVideoOne, recordVideoTwo, recordVideoThree]).then(
+//   (message) => {
+//     console.log(message);
+//   }
+// );
+
+// Promise.race([recordVideoOne, recordVideoTwo, recordVideoThree]).then(
+//   (message) => {
+//     console.log(message);
+//   }
+// );
