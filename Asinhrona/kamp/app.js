@@ -56,3 +56,41 @@
 // };
 
 // fetchData3();
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+// const fetchingData = async () => {
+//   const data = await fetch("https://jsonplaceholder.typicode.com/todos");
+//   const result = await data.json();
+//   // console.log(result);
+//   const filtered = await result.filter((el) => el.id % 2 === 0);
+//   // console.log(filtered);
+
+//   return { result, filtered };
+
+//   // return {
+//   //   result: result,
+//   //   filtered: filtered,
+//   // };
+// };
+
+// fetchingData().then((el) => console.log(el));
+
+const fetchComments = async (a, b) => {
+  // let unos = prompt("unesi broj");
+  // let unos2 = prompt("unesi broj");
+
+  // const data = await fetch(
+  //   `https://jsonplaceholder.typicode.com/comments?postId=${unos}&postId=${unos2}`
+  // );
+
+  const data = await fetch(
+    `https://jsonplaceholder.typicode.com/comments?postId=${a}&postId=${b}`
+  );
+
+  const result = await data.json();
+
+  console.log(result);
+};
+
+fetchComments(3, 4);
