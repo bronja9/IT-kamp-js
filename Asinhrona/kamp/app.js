@@ -76,21 +76,47 @@
 
 // fetchingData().then((el) => console.log(el));
 
-const fetchComments = async (a, b) => {
-  // let unos = prompt("unesi broj");
-  // let unos2 = prompt("unesi broj");
+// const fetchComments = async (a, b) => {
+//   // let unos = prompt("unesi broj");
+//   // let unos2 = prompt("unesi broj");
 
-  // const data = await fetch(
-  //   `https://jsonplaceholder.typicode.com/comments?postId=${unos}&postId=${unos2}`
-  // );
+//   // const data = await fetch(
+//   //   `https://jsonplaceholder.typicode.com/comments?postId=${unos}&postId=${unos2}`
+//   // );
 
-  const data = await fetch(
-    `https://jsonplaceholder.typicode.com/comments?postId=${a}&postId=${b}`
-  );
+//   const data = await fetch(
+//     `https://jsonplaceholder.typicode.com/comments?postId=${a}&postId=${b}`
+//   );
 
-  const result = await data.json();
+//   const result = await data.json();
 
-  console.log(result);
-};
+//   console.log(result);
+// };
 
-fetchComments(3, 4);
+// fetchComments(3, 4);
+
+///////////////////////////////////////////////////////////////////////////////
+
+// const forPractice = [
+//   [1, 2, 3],
+//   [4, 5, 5, 7, 9],
+//   [7, 7, 9],
+// ];
+
+// for (let i = 0; i < forPractice.length; i++) {
+//   console.log(forPractice[i][i]);
+// }
+
+// for (let i = 0; i < forPractice.length; i++) {
+//   console.log(forPractice[i][forPractice.length - 1 - i]);
+// }
+
+// for (let i = 0; i < forPractice.length; i++) {
+//   for (let j = 0; j < forPractice[i].length; j++) {
+//     if (i + j === 2) {
+//       console.log(forPractice[i][j]);
+//     }
+//   }
+// }
+
+//////////////////////////////////////////////////////////////////////////////////
