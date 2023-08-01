@@ -59,5 +59,5 @@ for (let i = 0; i < porscheCarPlatz.length; i++) {
     }
   }
 }
-
+``;
 console.log(porscheCarPlatz);
