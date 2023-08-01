@@ -84,3 +84,8 @@ function oneOfTwo(f, s) {
 
 let resultFunction = oneOfTwo(first, second);
 resultFunction();
+
+////////////// pangam
+
+console.log(isPangam("sadkjsalkdjs"));
+console.log("dksajl");
