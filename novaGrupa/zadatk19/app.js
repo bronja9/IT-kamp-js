@@ -34,3 +34,24 @@ function noAnonymus() {
 
 const returnValueOfNoAnoymousFunction = noAnonymus();
 returnValueOfNoAnoymousFunction();
+
+//////////
+
+function multiplyBy(broj) {
+  return function (x) {
+    return x * broj;
+  };
+}
+
+// console.log(multiplyBy(3));
+
+// multiplyBy nam je zapravo kao fabrika funkcija!
+// anonimna funkcija ( nema naziv ) je unutrasnja funkcija nase multyplyBy funkcije!
+
+const triple = multiplyBy(3);
+const double = multiplyBy(2);
+const havle = multiplyBy(0.5);
+
+console.log(triple(3));
+console.log(double(5));
+console.log(havle(7));
