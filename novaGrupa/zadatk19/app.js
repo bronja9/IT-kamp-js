@@ -61,3 +61,15 @@ console.log(havle(7));
 function message() {
   console.log(prompt("unesi nesto"));
 }
+
+//
+
+// setInterval(() => {
+//   console.log("set interval");
+// }, 1000);
+
+// setTimeout(message, 1000);
+
+// setTimeout(() => {
+//   console.log(prompt("unesi posle nesto"));
+// }, 2000);
