@@ -55,3 +55,9 @@ const havle = multiplyBy(0.5);
 console.log(triple(3));
 console.log(double(5));
 console.log(havle(7));
+
+//
+
+function message() {
+  console.log(prompt("unesi nesto"));
+}
