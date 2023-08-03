@@ -73,3 +73,36 @@ function message() {
 // setTimeout(() => {
 //   console.log(prompt("unesi posle nesto"));
 // }, 2000);
+
+const btn = document.querySelector("button");
+
+// btn.addEventListener("click", () => {
+//   alert("nasa poruka");
+// });
+
+let Nikola = function () {
+  alert("chao");
+};
+
+// Nikola();
+
+// btn.addEventListener("click", function () {
+//   alert("nasa poruka praveci drugaciju funkciju");
+// });
+
+btn.addEventListener("click", Nikola);
+
+//////////////////////
+
+// function firstFunction(){
+//   const array = [1, 2, 4, 5, 6, 7];
+
+// }
+
+function totalGuess(num) {
+  for (let i; i < num; i++) {
+    prompt("probaj da pogodis broj");
+  }
+}
+
+totalGuess(4);
