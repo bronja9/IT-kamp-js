@@ -99,10 +99,10 @@ btn.addEventListener("click", Nikola);
 
 // }
 
-function totalGuess(num) {
-  for (let i; i < num; i++) {
+function totalGuess() {
+  for (let i; i < 3; i++) {
     prompt("probaj da pogodis broj");
   }
 }
 
-totalGuess(4);
+totalGuess();
