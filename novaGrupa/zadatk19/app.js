@@ -93,16 +93,3 @@ let Nikola = function () {
 btn.addEventListener("click", Nikola);
 
 //////////////////////
-
-// function firstFunction(){
-//   const array = [1, 2, 4, 5, 6, 7];
-
-// }
-
-function totalGuess() {
-  for (let i; i < 3; i++) {
-    prompt("probaj da pogodis broj");
-  }
-}
-
-totalGuess();
