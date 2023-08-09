@@ -23,13 +23,24 @@ console.log(findFirstPositive(arrayOfNumbers));
 // Napišite funkciju koja provjerava jesu li svi elementi niza veći od 10.
 
 function checkIfAllAreGreater(array) {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] > 10) {
-      return true;
-    } else {
-      return false;
-    }
+  function check10(num) {
+    return num > 10;
   }
+
+  return array.every(check10);
 }
 
 console.log(checkIfAllAreGreater(arrayOfNumbers));
+
+// Zadatak 2: Some
+// Napišite funkciju koja provjerava je li barem jedan od elemenata u nizu parni broj.
+
+function checkIfNumIsEven(array) {
+  function checkEven(num) {
+    return num % 2 === 0;
+  }
+
+  return array.some(checkEven);
+}
+
+console.log(checkIfNumIsEven(arrayOfNumbers));
