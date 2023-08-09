@@ -3,11 +3,18 @@ const arrayOfNumbers = [
 ];
 
 //Zadatak 4: Pronalaženje prvog pozitivnog broja
-//Napišite funkciju koja pronalazi i vraća prvi pozitivan broj u nizu. Ako nema pozitivnih brojeva, funkcija treba vratiti null.
+//Napišite funkciju koja pronalazi i vraća prvi pozitivan broj u nizu.
+// Ako nema pozitivnih brojeva, funkcija treba vratiti null.
 
-for (let i = 0; i < arrayOfNumbers.length; i++) {
-  if (arrayOfNumbers[i] > 0) {
-    console.log(arrayOfNumbers[i]);
+function findFirstPositive(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      return array[i];
+      break;
+    } else {
+      return null;
+    }
   }
-  break;
 }
+
+console.log(findFirstPositive(arrayOfNumbers));
