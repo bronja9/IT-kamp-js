@@ -19,4 +19,17 @@ function findFirstPositive(array) {
 
 console.log(findFirstPositive(arrayOfNumbers));
 
-console.log(findFirstPositive(arrayOfNumbers));
+// Zadatak 3: Every
+// Napišite funkciju koja provjerava jesu li svi elementi niza veći od 10.
+
+function checkIfAllAreGreater(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 10) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+console.log(checkIfAllAreGreater(arrayOfNumbers));
