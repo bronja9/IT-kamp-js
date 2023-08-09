@@ -18,3 +18,5 @@ function findFirstPositive(array) {
 }
 
 console.log(findFirstPositive(arrayOfNumbers));
+
+console.log(findFirstPositive(arrayOfNumbers));
