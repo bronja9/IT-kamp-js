@@ -19,6 +19,15 @@ function findFirstPositive(array) {
 
 console.log(findFirstPositive(arrayOfNumbers));
 
+//The find() method returns the first element in the provided array that satisfies the provided
+// testing function. If no values satisfy the testing function, undefined is returned.
+
+function findFirstPositive2(array) {
+  return array.find((e) => e > 0);
+}
+
+console.log(findFirstPositive2(arrayOfNumbers));
+
 // Zadatak 3: Every
 // Napišite funkciju koja provjerava jesu li svi elementi niza veći od 10.
 
@@ -44,3 +53,12 @@ function checkIfNumIsEven(array) {
 }
 
 console.log(checkIfNumIsEven(arrayOfNumbers));
+
+// Zadatak 1: Filter zadatak
+// Napišite funkciju koja prima niz brojeva i vraća novi niz koji sadrži samo pozitivne brojeve.
+
+function positiveNumbers(array) {
+  return array.filter((e) => e > 0);
+}
+
+console.log(positiveNumbers(arrayOfNumbers));
