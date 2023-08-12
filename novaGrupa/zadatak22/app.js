@@ -9,7 +9,7 @@ function checkAntonims(array) {
 
   for (let i = 0; i < array.length; i++) {
     for (let j = 1; j < array.length; j++) {
-      if (array[i] - array[i] * 2 === array[j]) {
+      if (array[i] + array[j] === 0 && array[i] > 0) {
         antonimPositive.push(array[i]);
       }
     }
