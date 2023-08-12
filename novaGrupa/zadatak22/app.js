@@ -18,3 +18,33 @@ function checkAntonims(array) {
 }
 
 console.log(checkAntonims(niz));
+
+///////////////////////////////////////////// DOM
+
+// const header = document.querySelector(".header");
+// // console.log(header);
+// header.style.background = "red";
+
+const header2 = document.getElementsByClassName("header");
+console.log(header2);
+header2[0].style.backgroundColor = "blue";
+
+const btn1 = document.getElementById("1");
+
+btn1.addEventListener("click", () => {
+  alert("clicked");
+});
+
+const btn2 = document.getElementById("2");
+
+btn2.addEventListener("mouseleave", () => {
+  console.log("radi");
+  document.body.style.backgroundColor = "pink";
+});
+
+const colors = ["red", "blue", "green", "black", "grey", "purple", "orange"];
+
+btn2.addEventListener("mouseover", () => {
+  let n = Math.floor(Math.random() * colors.length);
+  document.body.style.backgroundColor = `${colors[n]}`;
+});
