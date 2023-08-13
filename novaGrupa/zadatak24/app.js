@@ -21,3 +21,12 @@ function twoArrays(first, second) {
 console.log(twoArrays(DATA1, DATA2));
 
 //2
+
+const numbers = [2, 5, 10, 3, 4, 8];
+let square = [];
+for (let i = 0; i < numbers.length; i++) {
+  square.push(numbers[i] * numbers[i]);
+}
+console.log(square);
+
+//3
