@@ -30,3 +30,14 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(square);
 
 //3
+let root = [];
+for (let i = 0; i < square.length; i++) {
+  root.push(Math.sqrt(square[i]));
+}
+console.log(root);
+
+//4
+
+let zeroT = [];
+zeroT.push([root[0] * root[0], root[3] * root[3], root[5] * root[5]]);
+console.log(zeroT);
