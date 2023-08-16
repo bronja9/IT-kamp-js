@@ -58,3 +58,13 @@ for (let i = 0; i < words.length; i++) {
 }
 
 console.log(secondE);
+
+let length6 = [];
+
+for (let i = 0; i < words.length; i++) {
+  if (words[i].length >= 6) {
+    length6.push(words[i]);
+  }
+}
+
+console.log(length6);
