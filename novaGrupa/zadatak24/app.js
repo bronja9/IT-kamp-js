@@ -37,7 +37,24 @@ for (let i = 0; i < square.length; i++) {
 console.log(root);
 
 //4
-
 let zeroT = [];
 zeroT.push([root[0] * root[0], root[3] * root[3], root[5] * root[5]]);
 console.log(zeroT);
+
+//5
+let filtered = root.filter((el) => el % 2 === 0);
+
+console.log(filtered);
+
+//6
+const words = ["televizor", "daljinski", "telefon", "voda", "ranac", "stolica"];
+
+let secondE = [];
+
+for (let i = 0; i < words.length; i++) {
+  if (words[i][1] === "e") {
+    secondE.push(words[i]);
+  }
+}
+
+console.log(secondE);
