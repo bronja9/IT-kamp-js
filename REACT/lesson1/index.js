@@ -7,5 +7,3 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ReactDOM.render(<h1>This is JSX</h1>, document.getElementById("root"));
-
-console.log("dksak");
