@@ -96,27 +96,3 @@
 // fetchComments(3, 4);
 
 ///////////////////////////////////////////////////////////////////////////////
-
-// const forPractice = [
-//   [1, 2, 3],
-//   [4, 5, 5, 7, 9],
-//   [7, 7, 9],
-// ];
-
-// for (let i = 0; i < forPractice.length; i++) {
-//   console.log(forPractice[i][i]);
-// }
-
-// for (let i = 0; i < forPractice.length; i++) {
-//   console.log(forPractice[i][forPractice.length - 1 - i]);
-// }
-
-// for (let i = 0; i < forPractice.length; i++) {
-//   for (let j = 0; j < forPractice[i].length; j++) {
-//     if (i + j === 2) {
-//       console.log(forPractice[i][j]);
-//     }
-//   }
-// }
-
-//////////////////////////////////////////////////////////////////////////////////
